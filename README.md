@@ -17,7 +17,7 @@ The exceptions to this rule include `ytdl-update.bat`, which expects no argument
 Note the following:
 - An 'id' is a sequence of symbols, letters and numbers that uniquely identifies a Youtube video. Youtube urls specifying a specific video typically follow the pattern `https://www.youtube.com/watch?v=<id>`, in which case the part following `v=` and before any `&` if present will be the video id.
 - A 'playlist id' is also a sequence of symbols, letters and numbers, but is typically much longer than a video id because theoretically it's possible to have more playlists than videos. A URL linking to a playlist in full typically takes the form `https://www.youtube.com/playlist?list=<list-id>` and the url for a video within a playlist typically takes the form `https://www.youtube.com/watch?v=<id>&list=<list-id>`, where 'id' is the video id, 'list-id' is the playlist id (there may be other parameters too). Playlist ids tend to start with 'PL' for a proper playlist and 'UU' for a playlist of a given user's entire collection of uploaded videos.
-- Typically it is quicker and easier to pass the id or playlist id rather than a full URL, however some ids begin with `-`, which can be problematic as they will sometimes be misinterpreted as a flag argument being passed to `youtube-dl`. Quoting the argument or using the full url may help to prevent this, but your mileage may vary.
+- Typically it is quicker and easier to pass the id or playlist id rather than a full URL, however some ids begin with `-`, which can be an issue as they will sometimes be misinterpreted as a flag argument being passed to `youtube-dl`. Quoting the argument or using the full url may help to prevent this, but your mileage may vary.
 
 ## Files
 
